@@ -2,44 +2,14 @@
 layout: default
 ---
 
-<!DOCTYPE html>
-<html>
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-  <title>reallycoolsoftware, Inc.</title>
+<div id="home_page"></div>
 
-  <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
-  <![endif]-->
+<script>
+	(function() {
+		var inventions = ['Anesthesia', 'Penicillin', 'Facebook', 'Telephone', 'Internet',
+						  'Steam Engine', 'Printing Press', 'Electricity', 'Fire', 'Wheel'];
 
-  <link rel="stylesheet" href="/lytebox/lytebox.css" type="text/css" media="screen"/>
-  <link rel="shortcut icon" href="/favicon.ico"/>
-  <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css"/>
-  <link rel="stylesheet" type="text/css" href="/css/custom.css"/>
-
-  <script type="text/javascript" src="/js/jquery.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-  <script src="/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-
-<body>
-
-  <div id="page">
-
-    <ul class="post-list">
-    	{% for post in site.posts %}
-        <li>
-            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-		<h2>
-	           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-	        </h2>
-        </li>
-     {% endfor %}
-   </ul>
-
-  </div>
-
-</body>
-</html>
+		var randomIndex = Math.floor(Math.random() * 10);
+		document.getElementById("home_page").innerHTML = "I think one of the greatest invention of mankind is " + inventions[randomIndex];
+	})();
+</script>

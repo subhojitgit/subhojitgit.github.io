@@ -1,20 +1,11 @@
 <!DOCTYPE html>
 <html>
-
-  {% include head.html %}
-
-  <body>
-
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
-
-    {% include footer.html %}
-
-  </body>
-
+	{% include head.html %}
+	<body>
+		<div style="width: 100%;">
+    		<div style="float: left; width:10%">{% include sidebar.html %}</div>
+    		<div style="float: left; padding-left: 25px">{{content}}</div>
+		</div>
+		<div style="clear: both"></div>
+	</body>
 </html>
