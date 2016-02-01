@@ -6,11 +6,15 @@
 		<script type="text/javascript" src="/public/js/bootstrap.min.js"></script>
 		{% include up_navbar.html %}
 		<div style="padding-top:70px">
-		<div class="text-center">
-			<div class="lead">
-				{{content}}
+			<div class="container content">
+				<div class="posts">
+					<article class="post">
+						<h1 class="post-title">{{post.title}}</h1>
+						
+						{{content}}
+					</article>
+				</div>
 			</div>
-		</div>
 		</div>
 	</body>
 </html>

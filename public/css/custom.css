@@ -1,3 +1,10 @@
+body {
+	font-family: "freight-text-pro", "adobe-caslon-pro", "Times New Roman", serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 20px;
+}
+
 nav a {
   padding-top: 20px !important;
   padding-bottom: 20px !important;
@@ -12,7 +19,9 @@ nav .navbar-toggle {
   font-size: 30px;
 }
 
-
+.navbar-fixed-top {
+position: fixed;
+}
 
 nav.navbar.shrink {
   min-height: 35px;
